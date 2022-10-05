@@ -1,0 +1,17 @@
+Why: 과제 제출시에는 아래 질문을 고민해보고 답변을 함께 제출해주세요.
+1. 수정, 삭제 API의 request를 어떤 방식으로 사용하셨나요? (param, query, body)
+--param사용했습니다
+2. 어떤 상황에 어떤 방식의 request를 써야하나요?
+    전체게시글 목록 : @GetMapping
+    게시글 생성 : @PostMapping
+    게시글 조회 : @GetMapping
+    비밀번호 확인 : @PostMapping
+    수정 : @PutMapping
+    삭제 : @DeleteMapping
+3. RESTful한 API를 설계했나요? 어떤 부분이 그런가요? 어떤 부분이 그렇지 않나요?
+    요구사항에 맞게 생성,조회,수정,삭제를 진행하였고 비밀번호 확인에 대해선 자세히
+    숙지하지 못해서 boolean으로 일치여부만 확인했습니다.
+4. 적절한 관심사 분리를 적용하였나요? (Controller, Repository, Service)
+    처음부터 controller와 service를 분리해서 로직을 짜다보니 많이 헷갈렸고
+    그래도 요구사항에 맞게 준비를 했습니다.
+5. 작성한 코드에서 빈(Bean)을 모두 찾아보세요!
